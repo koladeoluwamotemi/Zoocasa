@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js">
+    </script>
+</head>
+
+<body ng-app="myApp">
+    <div id="main" ng-controller="appCtrl" class="container">
+        <h2>Bacon Ipsum</h2>
+        <h4>Consectetur in ground round landjaeger. Tempor ut sausage spare ribs cupim brisket biltong cupim jerky meatloaf in lorem.</h4>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="pic_div">
+                    <img class="pic" src="images/hamburger.svg" alt="Hamburger">
+                    <h4>Hamburger</h4>
+                </div>
+                <div class="pic_div" style="border-bottom: none;">
+                    <h5>Spicy jalapeno bacon ipsum dolor amet dolore jowl tempor consequat flank ribeye. Voluptate tri-tip ex exercitation nisi rump ball tip short ribs labore ipsum.</h5>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="pic_div">
+                    <img class="pic" src="images/diamond.svg" alt="Diamond">
+                    <h4>Diamond</h4>
+                </div>
+                <div class="pic_div" style="border-bottom: none;">
+                    <h5>Id ex pariatur sausage eu boudin nulla, tempor lorem do jowl swine. Excepteur corned beef proident kevin sirloin do. In non tri-tip ham shankle bone picanhavelit.</h5>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="pic_div">
+                    <img class="pic" src="images/puzzle.svg" alt="Puzzle">
+                    <h4>Extreme Puzzle</h4>
+                </div>
+                <div class="pic_div" style="border-bottom: none;">
+                    <h5>Bacon tail ribeye esse shank short ribs, rump ut elit. Beef filet mignon tongue brisket. Do short ribs magna culpa frankfurter fugiat.</h5>
+                </div>
+            </div>
+        </div>
+        <div id="school">
+            <h2>Featured Schools</h2>
+            <div class="carousel">
+                <div id="schools" ng-repeat="s in schools">
+                    <school data="s"></school>
+                </div>
+                <div class="arrows">
+                    < </div>
+                        <div class="arrows">
+                            >
+                        </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="js/app.js"></script>
+</body>
+
+</html>

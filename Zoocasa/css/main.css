@@ -1,0 +1,23 @@
+#main {
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    min-width: 280px;
+}
+
+.pic {
+    width: 200px;
+    height: 200px;
+}
+
+.pic_div {
+    border-bottom: 2px solid grey;
+    max-width: 300px;
+    margin: auto;
+}
+
+.arrows {
+    width: 20px;
+    border-radius: 50px;
+    border: solid;
+}
